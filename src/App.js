@@ -7,7 +7,8 @@ import { Section } from './Components/Shopping/Section/Section';
 function App() {
   return (
     <div className="">
-      <Cart />
+      <h1>Shopping Cart</h1>
+      {/* <Cart /> */}
       <Min />
       <Section />
     </div>

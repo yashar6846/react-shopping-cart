@@ -1,9 +1,16 @@
 import React from 'react'
 
-export const Cart = () => {
+export const Cart = (props) => {
+    const addToCart = () => {
+        console.log('Clicked!');
+    }
     return (
         <div>
-            Cart
+          <p>{props.title}</p>
+          <p>{props.price}</p>
+          <button
+          onClick={addToCart}>
+              Add to Cart</button>
         </div>
     )
 }
