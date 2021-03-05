@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CreateContext } from '../../../Shared/Coutext/cart-context';
 
 export const Cart = (props) => {
+
+    const [cartItems, setCartItems] = useContext( CreateContext)
     const addToCart = () => {
-        console.log('Clicked!');
+        const product = { title: props.title, price: props.price}
+        setCartItems((currState) => {
+            return [...currState, product]
+        })
     }
     return (
         <div>
@@ -11,6 +17,7 @@ export const Cart = (props) => {
           <button
           onClick={addToCart}>
               Add to Cart</button>
+              
         </div>
     )
 }

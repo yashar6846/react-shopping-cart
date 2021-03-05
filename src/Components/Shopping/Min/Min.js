@@ -5,7 +5,8 @@ export const Min = () => {
     const products = [
         {id: 1, title: "Book 1", price: 79},
         {id: 2, title: "Book 2", price: 49},
-        {id: 3, title: "Book 3", price: 89}
+        // {id: 3, title: "Book 3", price: 89},
+        {id: 4, title: "Book 4", price: 99}
 
     ]
     return (
